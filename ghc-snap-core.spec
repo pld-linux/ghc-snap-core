@@ -2,7 +2,7 @@
 Summary:	Snap: A Haskell Web Framework (core interfaces and types)
 Name:		ghc-%{pkgname}
 Version:	0.9.4.1
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Languages
 Source0:	http://hackage.haskell.org/packages/archive/%{pkgname}/%{version}/%{pkgname}-%{version}.tar.gz
