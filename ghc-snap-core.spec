@@ -1,3 +1,5 @@
+# TODO: switch to hashable >= 1.2.1 deps when it becomes available in Th
+# (1.2.0.x are not supported; only 1.1.* or >= 1.2.1)
 #
 # Conditional build:
 %bcond_without	prof	# profiling library
@@ -44,7 +46,8 @@ BuildRequires:	ghc-enumerator >= 0.4.15
 BuildRequires:	ghc-enumerator < 0.5
 BuildRequires:	ghc-filepath >= 1.1
 BuildRequires:	ghc-filepath < 2.0
-BuildRequires:	ghc-hashable >= 1.2.1
+BuildRequires:	ghc-hashable >= 1.1
+#BuildRequires:	ghc-hashable >= 1.2.1
 BuildRequires:	ghc-hashable < 1.3
 BuildRequires:	ghc-mtl >= 2.0
 BuildRequires:	ghc-mtl < 2.2
@@ -95,7 +98,8 @@ BuildRequires:	ghc-enumerator-prof >= 0.4.15
 BuildRequires:	ghc-enumerator-prof < 0.5
 BuildRequires:	ghc-filepath-prof >= 1.1
 BuildRequires:	ghc-filepath-prof < 2.0
-BuildRequires:	ghc-hashable-prof >= 1.2.1
+BuildRequires:	ghc-hashable-prof >= 1.1
+#BuildRequires:	ghc-hashable-prof >= 1.2.1
 BuildRequires:	ghc-hashable-prof < 1.3
 BuildRequires:	ghc-mtl-prof >= 2.0
 BuildRequires:	ghc-mtl-prof < 2.2
@@ -148,7 +152,8 @@ Requires:	ghc-enumerator >= 0.4.15
 Requires:	ghc-enumerator < 0.5
 Requires:	ghc-filepath >= 1.1
 Requires:	ghc-filepath < 2.0
-Requires:	ghc-hashable >= 1.2.1
+Requires:	ghc-hashable >= 1.1
+#Requires:	ghc-hashable >= 1.2.1
 Requires:	ghc-hashable < 1.3
 Requires:	ghc-mtl >= 2.0
 Requires:	ghc-mtl < 2.2
@@ -220,7 +225,8 @@ Requires:	ghc-enumerator-prof >= 0.4.15
 Requires:	ghc-enumerator-prof < 0.5
 Requires:	ghc-filepath-prof >= 1.1
 Requires:	ghc-filepath-prof < 2.0
-Requires:	ghc-hashable-prof >= 1.2.1
+Requires:	ghc-hashable-prof >= 1.1
+#Requires:	ghc-hashable-prof >= 1.2.1
 Requires:	ghc-hashable-prof < 1.3
 Requires:	ghc-mtl-prof >= 2.0
 Requires:	ghc-mtl-prof < 2.2
