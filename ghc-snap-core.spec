@@ -8,14 +8,13 @@
 Summary:	Snap: A Haskell Web Framework (core interfaces and types)
 Summary(pl.UTF-8):	Snap - szkielet WWW dla Haskella (główne interfejsy i typy)
 Name:		ghc-%{pkgname}
-Version:	0.9.5.0
+Version:	0.9.6.0
 Release:	1
 License:	BSD
 Group:		Development/Languages
 #Source0Download: http://hackage.haskell.org/package/snap-core
 Source0:	http://hackage.haskell.org/package/%{pkgname}-%{version}/%{pkgname}-%{version}.tar.gz
-# Source0-md5:	e347d1aeee7a2990d211b9d1556c125d
-Patch0:		%{name}-deps.patch
+# Source0-md5:	1a83770b9a5b755af63fea939d585492
 URL:		http://hackage.haskell.org/package/snap-core
 BuildRequires:	ghc >= 6.12.3
 BuildRequires:	ghc-HUnit >= 1.2
@@ -258,7 +257,6 @@ kiedy potrzebujemy systemu profilującego z GHC.
 
 %prep
 %setup -q -n %{pkgname}-%{version}
-%patch0 -p1
 
 %build
 runhaskell Setup.hs configure -v2 \
