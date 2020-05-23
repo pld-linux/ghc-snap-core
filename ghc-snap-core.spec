@@ -122,7 +122,7 @@ BuildRequires:	ghc-zlib-enum-prof < 0.3
 %endif
 BuildRequires:	rpmbuild(macros) >= 1.608
 Requires(post,postun):	/usr/bin/ghc-pkg
-%requires_releq	ghc
+%requires_eq	ghc
 Requires:	ghc-HUnit >= 1.2
 Requires:	ghc-HUnit < 2
 Requires:	ghc-MonadCatchIO-transformers >= 0.2.1
